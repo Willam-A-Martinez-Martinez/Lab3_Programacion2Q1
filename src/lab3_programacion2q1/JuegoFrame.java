@@ -4,10 +4,28 @@
  */
 package lab3_programacion2q1;
 
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
 /**
- *
- * @author DELL
+ *Nadiesda trabajo en esta clase pero tuvo problemas con github
  */
-public class JuegoFrame {
-    
+class JuegoFrame extends JFrame {
+    public JuegoFrame() {
+        setTitle("Juego");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        getContentPane().setBackground(new Color(173, 216, 230));
+        
+        JLabel lblMensaje = new JLabel("¡Bienvenido al juego!", SwingConstants.CENTER);
+        lblMensaje.setFont(new Font("Segoe UI", Font.BOLD, 16));
+        lblMensaje.setForeground(Color.BLUE);
+        add(lblMensaje);
+        
+        setVisible(true);
+    }
 }
