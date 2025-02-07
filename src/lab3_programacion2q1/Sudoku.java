@@ -8,6 +8,7 @@ package lab3_programacion2q1;
  *
  * @author DELL
  */
+
 public abstract class Sudoku {
     protected int[][] sudokuInicial = {
         {5, 3, 0, 0, 7, 0, 0, 0, 0},
@@ -22,6 +23,5 @@ public abstract class Sudoku {
     };
 
     public abstract boolean esNumeroValido(int row, int col, int num);
-    
     public abstract int[][] resolverSudoku();
 }
